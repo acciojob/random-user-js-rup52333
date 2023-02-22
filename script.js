@@ -9,15 +9,15 @@ let age= document.querySelector('[data-attr="age"]');
 let email = document.querySelector('[data-attr="email"]');
 let phone = document.querySelector('[data-attr="phone"]');
 let getUser = document.getElementById('getUser');
-   email.onclick = function(){
-	   additionalinfo.innerText = "andrea.sørensen@example.com";
-}
-   age.onclick = function(){
-	   additionalinfo.innerText = "22";
-}
- phone.onclick = function(){
-	   additionalinfo.innerText ="01-28-27-83-25";
-}
+//    email.onclick = function(){
+// 	   additionalinfo.innerText = "andrea.sørensen@example.com";
+// }
+//    age.onclick = function(){
+// 	   additionalinfo.innerText = "22";
+// }
+//  phone.onclick = function(){
+// 	   additionalinfo.innerText ="01-28-27-83-25";
+// }
 getUser.addEventListener("click", function() {
   fetch(url)
     .then(handleErrors)
@@ -46,7 +46,7 @@ function updateProfile (profile){
 	   additionalinfo.innerText = profile.results[0].email;
 }
    age.onclick = function(){
-	   additionalinfo.innerText = profile.results[0].age;
+	   additionalinfo.innerText = profile.results[0].dob.age;
 }
    phone.onclick = function(){
 	   additionalinfo.innerText = profile.results[0].phone;
