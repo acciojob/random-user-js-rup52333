@@ -15,8 +15,8 @@ let getUser = document.getElementById('getUser');
    age.onclick = function(){
 	   additionalinfo.innerText = "22";
 }
-   phone.onclick = function(){
-	   additionalinfo.innerText ="9614183846";
+ phone.onclick = function(){
+	   additionalinfo.innerText ="01-28-27-83-25";
 }
 getUser.addEventListener("click", function() {
   fetch(url)
